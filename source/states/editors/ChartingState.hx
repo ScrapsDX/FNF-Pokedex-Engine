@@ -258,12 +258,7 @@ class ChartingState extends MusicBeatState
 		nextRenderedSustains = new FlxTypedGroup<FlxSprite>();
 		nextRenderedNotes = new FlxTypedGroup<Note>();
 
-		FlxG.mouse.visible = true;
-		//FlxG.save.bind('funkin', CoolUtil.getSavePath());
-
-		//addSection();
-
-		// sections = _song.notes;
+		FlxG.mouse.useSystemCursor = true;
 
 		updateJsonData();
 		currentSongName = Paths.formatToSongPath(_song.song);

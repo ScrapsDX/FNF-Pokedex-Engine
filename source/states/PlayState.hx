@@ -3165,7 +3165,7 @@ class PlayState extends MusicBeatState
 			boyfriend.dance();
 	}
 
-	override function sectionHit()
+	public override function sectionHit()
 	{
 		if (SONG.notes[curSection] != null)
 		{
